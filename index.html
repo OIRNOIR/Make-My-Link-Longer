@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Make My Link Longer</title>
+    
+    <meta property="og:title" content="Soon™">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://make-my-link-longer.gq/">
+    <meta property="og:description" content="Tired of link shorteners? Make your link long and frightening.">
+    
+    <link id="favicon" rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <p class="centralize">
+      Generate a longer link
+      <input type="url" id="link" name="link" placeholder="https://example.com/">
+      <button id="generate" class="button" onclick="generate();">Make my link longer!</button>
+    </p>
+    <div id="generated" class="centralize">
+      <h1>Your generated link:</h1>
+      <code id="output"></code>
+      <button onclick="copyLink()">Copy</button>
+    </div>
+  </body>
+</html>
