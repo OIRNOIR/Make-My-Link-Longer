@@ -1,21 +1,16 @@
-let currentURL = "";
-
-function generate(){
-  const url = document.getElementById("link").value;
-  const step1 = btoa(url);
-  let step2 = [];
-  for (const letter of step1.split("")) {
-    for (let i = 0; i < 4; i++) {
-      step2.push(letter)
+window.onload = () => {
+  const urlParams = new URLSearchParams(location.search);
+  if (urlParams.has("thisIsAVeryLongLink")) {
+    window.history.replaceState(null, "", "/");
+    const step1 = atob(urlParams.get('thisIsAVeryLongLink'));
+    let step2 = [];
+    for (let i = 0; i < step1.length; i += 4) {
+      step2.push(step1.split("")[i]);
     }
+    let h = atob(step2.join(""));
+    if (!h.startsWith("http")){
+      h = "https://" + h;
+    }
+    window.location.href = h;
   }
-  const finalUrl = btoa(step2.join(""));
-  currentURL = "https://very-very-very-very-very-long-link.make-my-link-longer.ml/?thisIsAVeryLongLink=" + finalUrl;
-  document.getElementById("generated").style.display = "block";
-  document.getElementById("output").innerText = currentURL;
-}
-
-function copyLink() {
-  navigator.clipboard.writeText(currentURL);
-  alert("Copied to clipboard!");
 }
