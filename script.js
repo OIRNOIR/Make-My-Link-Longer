@@ -1,6 +1,6 @@
 window.onload = () => {
-  const urlParams = new URLSearchParams(location.search);
-  if (urlParams.has("thisIsAVeryLongLink")) {
+	const urlParams = new URLSearchParams(location.search);
+	if (urlParams.has("thisIsAVeryLongLink")) {
 		try {
 			const step1 = atob(urlParams.get('thisIsAVeryLongLink'));
 			let step2 = [];
@@ -15,7 +15,7 @@ window.onload = () => {
 		} catch {
 			document.getElementById("title").innerText = "This link is invalid!";	
 		}
-  } else {
+	} else {
 		document.getElementById("title").innerText = "This link is invalid!";
 	}
 }
