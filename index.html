@@ -14,7 +14,7 @@
 
 		<link rel="stylesheet" href="style.css">
 		
-		<script src="script.js" defer></script>
+		<script src="script.js"></script>
 	</head>	
 	<body>
 		<noscript>
@@ -24,14 +24,17 @@
 			Make My Link Longer
 		</h1>
 		<p class="centralize">
-			Generate a longer link
+			Gone are the days of link shorteners. Right now, the trend is to make extremely long links that enforce your site's power, charisma, and status.
+			<br>
+			With <b>Make My Link Longer</b>, you can accomplish that goal with ease. Simply paste your website's URL into the box below, click the generate button, and be amazed at the sheer length of the link you recieve.
+			<br>
 			<input type="url" id="link" name="link" placeholder="https://example.com/">
-			<button id="generate" class="button" onclick="generate();">Make my link longer!</button>
+			<button id="generate" class="button">Make my link longer!</button>
 		</p>
 		<div id="generated" class="centralize">
 			<h1>Your generated link:</h1>
 			<code id="output"></code>
-			<button onclick="copyLink()">Copy</button>
+			<button id="copy">Copy</button>
 		</div>
 	</body>
 </html>

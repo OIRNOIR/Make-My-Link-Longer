@@ -19,3 +19,7 @@ function copyLink() {
 	navigator.clipboard.writeText(currentURL);
 	alert("Copied to clipboard!");
 }
+
+document.getElementById("generate").addEventListener("click", generate);
+
+document.getElementById("copy").addEventListener("click", copyLink);
