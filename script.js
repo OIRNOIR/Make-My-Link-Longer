@@ -20,6 +20,7 @@ function copyLink() {
 	alert("Copied to clipboard!");
 }
 
-document.getElementById("generate").addEventListener("click", generate);
-
-document.getElementById("copy").addEventListener("click", copyLink);
+document.addEventListener("DOMContentLoaded", () => {
+	document.getElementById("generate").addEventListener("click", generate);
+	document.getElementById("copy").addEventListener("click", copyLink);
+});
