@@ -1,2 +1,2 @@
 /*
-  Content-Security-Policy: default-src 'self' https://make-my-link-longer.ml https://*.make-my-link-longer.ml; script-src 'self' https://make-my-link-longer.ml https://*.make-my-link-longer.ml; style-src 'self' https://make-my-link-longer.ml https://*.make-my-link-longer.ml;
+  Content-Security-Policy: default-src 'self' https://make-my-link-longer.xyz https://*.make-my-link-longer.xyz; script-src 'self' https://make-my-link-longer.xyz https://*.make-my-link-longer.xyz; style-src 'self' https://make-my-link-longer.xyz https://*.make-my-link-longer.xyz;
